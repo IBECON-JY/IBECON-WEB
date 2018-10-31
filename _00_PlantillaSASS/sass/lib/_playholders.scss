@@ -2,7 +2,7 @@
 //+++++++++++ $PLAYHOLDERS +++++++++++++++
 //****************************************
 
-%btn-more{
+%btn{
     text-decoration: none;
     text-align: center;
     color: get-map($colores,negro);
@@ -21,3 +21,10 @@
 }
 
 // para llmarlo: @extend btn-more
+
+//flexbox para centrar objetos:
+%flexCentrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

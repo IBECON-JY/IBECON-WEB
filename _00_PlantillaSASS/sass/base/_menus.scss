@@ -1,3 +1,78 @@
 // **********************************
 //+++++++++++ $MENUS+++++++++++++++*
 //**********************************
+
+
+header{
+    @include centrarCaja ($ancho:90%, $mtop:0, $mbottom:0);  
+   // @include flexbox($jc:space-between, $ai:center, $fd:row);
+   background-color: yellow; 
+
+    border: 1px solid red;
+     
+ }
+
+
+ 
+ #activar {
+     display: none;
+ }
+ 
+ /*----------------Hamburger Menu--------------------*/
+ .hamburger-menu__icono {
+    background-image: url('../fonts/iconos/menu.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+ }
+ 
+ 
+ 
+ /* al activar el menu, el menu se colocara en columnas, en vez de una unica fila */
+ /* EL "~" solo funciona con hermanos directos, por esto ahora no funciona*/
+ .menuPrincipal {
+     display: none;
+     a {
+         text-transform: uppercase;
+         text-decoration: none;
+         color: black;
+     }
+ 
+    a, a:focus, a:hover {
+     -webkit-transition-duration: .5s;
+     text-decoration: none;
+     outline: 0;
+     font-size: 14px;
+     font-weight: 400;
+ }
+ 
+ }
+ 
+ 
+ #activar:checked~.menuPrincipal{
+     display: flex;
+     flex-direction: column;
+     //margin: 5%;
+     align-items: center;
+ }
+ 
+ nav a {
+     text-transform: uppercase;
+     text-decoration: none;
+     //padding: 5%;
+     color: var(--Color-Gris-Medio);
+ }
+ .contenedor-redes {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     border: 1px solid blue;
+ }
+ 
+ 
+ //*--------------------------------------------------------------
+ /*# Navigation Menu
+ --------------------------------------------------------------*/
+ 
