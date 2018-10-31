@@ -1,37 +1,43 @@
-//*****************************
-//+++++++++++ SAAS ++++++++++++
-//*****************************
-
-// //RESET
- @import "base/reset/reset";
-     //Si utilizas IE
-     @import "base/reset/normalize";
+// **********************************
+//+++++++++++    SASS  ++++++++++++++
+//***********************************
 
 
-//VARIABLES
+// el orden de los imports es IMPORTANTE para no pisar los archivos
+// ZONA DE RESET
+@import "resetear/reset";
+    // si estamos utilizando navegadores antiguos como IE, para otros no es tan necesario
+    @import "resetear/normalize";
+
+
+    // VARIABLES
+// meter el nombre de los archivos sin extension, porque necesito el contenido del archivo
 @import "lib/variables";
 
 
-//TIPOGRAFIA
+
+// TIPOGRAFIA
 @import "base/tipografia";
 
 
-//LIBRERIA
+
+// LIBRERIAS: LIB
 @import "lib/mixins";
-@import "lib/placeholders";
+@import "lib/playholders";
 
 
-//LINKS
-@import "base/links/botones";
-@import "base/links/enlaces";
-@import "base/links/menus";
+// LINKS
+@import "base/botones";
+@import "base/enlaces";
+@import "base/menus";
 
 
-//FORMULARIOS
+// FORMULARIOS
 @import "base/formularios";
 
 
-//LAYOUTS
+// LAYOUTS
 @import "layout/banners";
 @import "layout/grids";
-@import "layout/layaouts";
+@import "layout/layouts";
+
