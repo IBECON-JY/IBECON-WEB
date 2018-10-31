@@ -5,14 +5,14 @@
 
 header{
     @include centrarCaja ($ancho:90%, $mtop:0, $mbottom:0);  
-   // @include flexbox($jc:space-between, $ai:center, $fd:row);
+   @include flexbox($jc:space-between, $ai:end, $fd:column);
    background-color: yellow; 
-
-    border: 1px solid red;
      
  }
 
-
+ .video_banner_humo{
+ width: 100%;
+ }
  
  #activar {
      display: none;
@@ -26,6 +26,7 @@ header{
     background-repeat: no-repeat;
     width: 50px;
     height: 50px;
+
  }
  
  
