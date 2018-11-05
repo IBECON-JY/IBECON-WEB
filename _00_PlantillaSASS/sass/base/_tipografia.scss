@@ -3,16 +3,16 @@
 //****************************************
 
 @font-face{
-    font-family: 'MonserratRegular';
-    src: local('MonserratRegular'), url(../fonts/Montserrat-Regular.woff)
+    font-family: 'CourierNew';
+    src: local('CourierNew'), url(../fonts/Montserrat-Regular.woff)
     format(woff);
 }
 
 
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'CourierNew', sans-serif;
     font-size: 16px;
-    color: map-get($colores, negro);
+    color: map-get($colores, blanco);
     // se coge BACKG-COLOR por variable por si cambiasemos el color blanco.
     //background-color: darken(map-get($colores, blanco), 5%);
 }

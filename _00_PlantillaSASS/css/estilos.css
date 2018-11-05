@@ -349,14 +349,28 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'MonserratRegular';
-  src: local("MonserratRegular"), url(../fonts/Montserrat-Regular.woff) format(woff); }
+  font-family: 'CourierNew';
+  src: local("CourierNew"), url(../fonts/Montserrat-Regular.woff) format(woff); }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'CourierNew', sans-serif;
   font-size: 16px;
-  color: #000; }
+  color: #fff; }
 
+/*
+// mixin para realizar un grid layout
+@mixin gridLayout ($gtrow:repeat(4, 1fr), 
+            $gtcolumn: repeat (3, 1fr),
+            $gapC:10px, $gapR:10PX) {
+    display: grid;
+    grid-template-rows: $gtcolumn; 
+    grid-template-columns: $gtrow; 
+    grid-row-gap: $gapR;
+    grid-column-gap: $gapC;
+   
+}
+
+*/
 .boton {
   display: block;
   width: 300px;
@@ -369,11 +383,6 @@ html {
     font-size: 3rem; }
 
 header {
-  width: 90%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +396,17 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: yellow; }
+  background-color: #000; }
+
+.logotipo-pagina__icon {
+  background-image: url("../fonts/iconos/menu.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: 2 px solid red; }
 
 .video_banner_humo {
   width: 100%; }
@@ -401,52 +420,6 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
   width: 50px;
   height: 50px; }
-
-/* al activar el menu, el menu se colocara en columnas, en vez de una unica fila */
-/* EL "~" solo funciona con hermanos directos, por esto ahora no funciona*/
-.menuPrincipal {
-  display: none; }
-  .menuPrincipal a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black; }
-  .menuPrincipal a, .menuPrincipal a:focus, .menuPrincipal a:hover {
-    -webkit-transition-duration: .5s;
-    text-decoration: none;
-    outline: 0;
-    font-size: 14px;
-    font-weight: 400; }
-
-#activar:checked ~ .menuPrincipal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-nav a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--Color-Gris-Medio); }
-
-.contenedor-redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 1px solid blue; }
-
-/*# Navigation Menu
- --------------------------------------------------------------*/

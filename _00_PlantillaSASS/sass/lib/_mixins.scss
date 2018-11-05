@@ -19,7 +19,7 @@
     align-items: $ai;
     flex-direction:$fd;
 }
-
+/*
 // mixin para realizar un grid layout
 @mixin gridLayout ($gtrow:repeat(4, 1fr), 
             $gtcolumn: repeat (3, 1fr),
@@ -32,6 +32,7 @@
    
 }
 
+*/
 
 //mixin medias 
 @mixin media($media) { //así gracias a esta variable solo tenemos que poner las letritas al llamarla y no todas las variables 
@@ -40,11 +41,7 @@
            @content; //gracia a esto dentro le podemos poner código al llamarlo con el include.
         }
     }
-    @else if $media==t {
-        @media only screen and (min-width: $breakpoint-tablet){
-               @content;
-        }
-    }
+
     @else if $media==e {
         @media only screen and (min-width: $breakpoint-desktop){
            @content;
