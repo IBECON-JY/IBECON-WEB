@@ -2,57 +2,69 @@
 //+++++++++++  $FOOTER  ++++++++++++++
 //****************************************
 
-footer{
-         //GENERAL
+
+
+footer {
+    //GENERAL
     width: 100%;
     height: 380px;
     background-color: black;
-  
-   
+
+
+
 
 
     //LOGO, H6 Y DIRECCION
-div.footer__datos{
-    display: flex;
+    div.footer__datos {
+        display: flex;
+        padding-top: 50px;
+        @extend %flexCentrar;
+        }
 
-    &__logo{
-        width: 50px;
-        height: 50px;
-        background-image: url('../fonts/iconos/logo.svg');
-        
-        
+        h6 {}
     }
-   h6{
+
+    div.footer__direccion {
+        @extend %flexCentrar;
        
-   }
-}
-
-    //REDES SOCIALES
-div.footer__redessociales{
-    display: flex;
-    &__fb{
-        width: 50px;
-        height: 50px;
-        border: 1px solid white;
     }
-    &__tw{
-        width: 50px;
-        height: 50px;
-        border: 1px solid white;
-    }
-    &__insta{
-        width: 50px;
-        height: 50px;
-        border: 1px solid white;
+    h4{
+        text-align: center;
     }
   
-}
 
-//ENLACES WEB
-div.footer__enlaces{
-    display: flex;
+    //REDES SOCIALES
+    div.footer__redessociales {
+        @extend %flexCentrar;
 
-}
+        padding-bottom: 50px;
+
+        &__fb {
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+        }
+
+        &__tw {
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+        }
+
+        &__insta {
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+        }
+
+    }
+
+    //ENLACES WEB
+    div.footer__enlaces {
+        @extend %flexCentrar;
+        margin-bottom: 100px;
+
+    }
 
 
 }
