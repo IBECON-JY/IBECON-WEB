@@ -526,6 +526,7 @@ header {
 /*.contenedor_slider{
     position: relative;
       */
+.slider {
   position: relative; }
 
 .diapostiva-inner {
