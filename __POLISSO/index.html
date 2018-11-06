@@ -49,19 +49,6 @@
         ********** Bloque HEADER *****************
     **********************************************-->
     <header>
-<<<<<<< HEAD
-        <!-- caja para meter el SVG del ssslogo y eslogan -->
-        <div class="cajaCentral">
-
-            <div class="cajaCentral__cont-LogoMenu">
-                <a href="#" class="cajaCentral__cont-LogoMenu__logoIcon">
-                    <!-- meter aqui el svg -->
-                </a>
-
-                <!-- Icono del boton menu de 3 barras -->
-                <label class='cajaCentral__cont-LogoMenu__inputlabel' for='activar'>
-                    <div class="cajaCentral__cont-LogoMenu__inputlabel__hamburger-menu__icono">
-=======
         <!-- caja para meter el SVG del logo y eslogan -->
 
         <div class="seccion_menu">
@@ -73,34 +60,10 @@
                 <!-- Icono de menu de 3 barras -->
                 <label class='inputlabel' for='activar'>
                     <div class="hamburger-menu__icono">
->>>>>>> 077411488c36434dd71296d725705630ccdb6086
                     </div><!-- .hamburger-menu -->
                 </label>
+                <!-- Fin icono de menu de 3 barras -->
             </div>
-<<<<<<< HEAD
-            <div class="cajaCentral__cont-nav">
-                <input id='activar' type='checkbox'>
-
-                <!-- enlaces de navegacion del menu -->
-
-                <!-- enlaces de navegacion del menu -->
-
-                <nav class='cajaCentral__cont-nav__menuPrincipal'>
-                    <a href="" class="cajaCentral__cont-nav__menuPrincipal__link-inicio">inicio</a>
-                    <a href="" class="cajaCentral__cont-nav__menuPrincipal__link-productos">productos</a>
-                    <a href="" class="cajaCentral__cont-nav__menuPrincipal__link-eventos">eventos</a>
-                    <a href="" class="cajaCentral__cont-nav__menuPrincipal__link-info">sobre nosotros</a>
-                </nav>
-            </div>
-
-
-
-
-
-            <!-- eslogan -->
-            <h1 class="cajaCentral__eslogan">Polissó, el teu concepte de gelat de qualitat.</h1>
-
-=======
 
             <input id='activar' type='checkbox'>
 
@@ -113,123 +76,31 @@
                 <a href="" class="menuPrincipal__link-about">eventos</a>
                 <a href="" class="menuPrincipal__link-blog">sobre nosotros</a>
             </nav>
->>>>>>> 077411488c36434dd71296d725705630ccdb6086
 
         </div>
+        <!-- caja para meter el SVG del logo y eslogan -->
 
-    </header>
+        <h1 class="logotipo-pagina__eslogan">Polissó, el teu concepte de gelat de qualitat.</h1>
 
-    <!--****************************************** 
-    ********** Bloque SECCION VIDEO ********
-    **********************************************-->
-    <section>
         <!-- VIDEO FULL WIDTH como banner -->
         <video class="video_banner_humo" autoplay muted loop>
             <source src="videos/19808533-hd__1_.mp4" type="video/mp4">
         </video>
-    </section>
+
+    </header>
+
+
 
     <!--****************************************** 
-        ********** Bloque SECCION PRODUCTOS********
-    **********************************************-->
-    <section>
-        <div class="productos">Descobreix es nostros productes</div>
-        <div class="slider">
-            <div class="slider__contenedor">
-                <!-- para imagen de las diapositivas tiene asignada un input -->
-                <input class="slider__contenedor__diapostiva-open" type="radio" id="diapostiva-1" name="diapostiva"
-                    aria-hidden="true" hidden="" checked="checked">
-                <picture class="slider__contenedor__diapostiva-item">
-                    <!-- para moviles -->
-                    <source srcset='img/smartphone/ 1x, img/smartphone/@2x.jpg 2x,img/smartphone/@2x.jpg 3x' media='(min-width:0px) and (max-width:767px)'>
-
-                    <!-- Para Tablets. -->
-                    <source srcset='img/Tablets/.jpg 1x, img/Tablets/@2x.jpg 2x' media='(min-width:768px) and(max-width:1199px)'>
-
-                    <!-- Para escritorio-->
-                    <source srcset='img/desktop/.jpg 1x,img/desktop/@2x.jpg 2x' media='(min-width:1200px)'>
-                    <!-- Imagen de respaldo. -->
-                    <img src='img/smartphone/.jpg' alt=''>
-                </picture>
-
-                <input class="slider__contenedor__diapostiva-open" type="radio" id="diapostiva-2" name="diapostiva"
-                    aria-hidden="true" hidden="">
-                <picture class="slider__contenedor__diapostiva-item">
-                    <!-- para moviles -->
-                    <source srcset='img/smartphone/ 1x, img/smartphone/@2x.jpg 2x,img/smartphone/@2x.jpg 3x' media='(min-width:0px) and (max-width:767px)'>
-
-                    <!-- Para Tablets. -->
-                    <source srcset='img/Tablets/.jpg 1x, img/Tablets/@2x.jpg 2x' media='(min-width:768px) and(max-width:1199px)'>
-
-                    <!-- Para escritorio-->
-                    <source srcset='img/desktop/.jpg 1x,img/desktop/@2x.jpg 2x' media='(min-width:1200px)'>
-                    <!-- Imagen de respaldo. -->
-                    <img src='img/smartphone/.jpg' alt=''>
-                </picture>
-
-
-                <input class="slider__contenedor__diapostiva-open" type="radio" id="diapostiva-3" name="diapostiva"
-                    aria-hidden="true" hidden="">
-                <picture class="slider__contenedor__diapostiva-item">
-                    <!-- para moviles -->
-                    <source srcset='img/smartphone/ 1x, img/smartphone/@2x.jpg 2x,img/smartphone/@2x.jpg 3x' media='(min-width:0px) and (max-width:767px)'>
-
-                    <!-- Para Tablets. -->
-                    <source srcset='img/Tablets/.jpg 1x, img/Tablets/@2x.jpg 2x' media='(min-width:768px) and(max-width:1199px)'>
-
-                    <!-- Para escritorio-->
-                    <source srcset='img/desktop/.jpg 1x,img/desktop/@2x.jpg 2x' media='(min-width:1200px)'>
-                    <!-- Imagen de respaldo. -->
-                    <img src='img/smartphone/.jpg' alt=''>
-                </picture>
-
-
-                <!-- asignacion de 2 flechas para cada diapositiva -->
-                <label for="diapostiva-3" class="diapostiva-control prev control-1">‹</label>
-                <label for="diapostiva-2" class="diapostiva-control next control-1">›</label>
-
-                <label for="diapostiva-1" class="diapostiva-control prev control-2">‹</label>
-                <label for="diapostiva-3" class="diapostiva-control next control-2">›</label>
-
-                <label for="diapostiva-2" class="diapostiva-control prev control-3">‹</label>
-                <label for="diapostiva-1" class="diapostiva-control next control-3">›</label>
-
-                <!-- asignacion de indicadores circulares -->
-                <ol class="slider__contenedor__diapostiva-indicatores">
-                    <li>
-                        <label for="diapostiva-1" class="diapostiva-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="diapostiva-2" class="diapostiva-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="diapostiva-3" class="diapostiva-circulo">•</label>
-                    </li>
-                </ol>
-            </div>
-        </div>
-
-
-    </section>
-
-    <!--****************************************** 
-        ********** Bloque SECCION EVENTOS*********
+        ********** Bloque SECCION *****************
     **********************************************-->
     <section>
 
 
-
     </section>
 
 
-    <!--****************************************** 
-        ********** Bloque SECCION SOBRE NOSOTROS****
-    **********************************************-->
-    <section>
 
-
-
-    </section>
     <!--****************************************** 
         ********** Bloque FOOTER *****************
     **********************************************-->
