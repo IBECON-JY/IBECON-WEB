@@ -26,5 +26,15 @@
 %flexCentrar{
     display: flex;
     justify-content: center;
-    align-items: center;
+   align-items: center;
     }
+
+// Para centrar uconos background
+
+%icon-background{
+            background-size: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 10px;
+            border-radius: 20%;
+}

@@ -361,6 +361,10 @@ html {
   font-size: 16px;
   color: #fff; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 /*
 // mixin para realizar un grid layout
 @mixin gridLayout ($gtrow:repeat(4, 1fr), 
@@ -375,7 +379,11 @@ html {
 }
 
 */
+<<<<<<< HEAD
 .cajaCentral__eslogan {
+=======
+footer div.footer__redessociales {
+>>>>>>> 077411488c36434dd71296d725705630ccdb6086
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,6 +394,7 @@ html {
   -ms-flex-align: center;
   align-items: center; }
 
+<<<<<<< HEAD
 header {
   background-color: #000; }
 
@@ -508,6 +517,14 @@ header {
     flex-direction: column;
     flex-direction: column;
     align-items: center; }
+=======
+footer div.footer__redessociales__fb, footer div.footer__redessociales__tw, footer div.footer__redessociales__insta {
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 20%; }
+>>>>>>> 077411488c36434dd71296d725705630ccdb6086
 
 .boton {
   display: block;
@@ -556,6 +573,7 @@ header {
   background: rgba(0, 0, 0, 0.28);
   border-radius: 50%;
   color: #fff;
+<<<<<<< HEAD
   cursor: pointer;
   display: none;
   font-size: 40px;
@@ -613,3 +631,82 @@ header {
 #diapostiva-2:checked ~ .control-2 ~ .diapostiva-indicatores li:nth-child(2) .diapostiva-circulo,
 #diapostiva-3:checked ~ .control-3 ~ .diapostiva-indicatores li:nth-child(3) .diapostiva-circulo {
   color: #428bca; }
+=======
+  width: 50px;
+  height: 50px; }
+
+footer {
+  height: 380px;
+  background-color: black; }
+  footer div.footer__datos {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    footer div.footer__datos h6 {
+      margin-bottom: 20px; }
+    footer div.footer__datos h4 {
+      margin-top: 40px;
+      margin-bottom: 20px; }
+  footer div.footer__redessociales {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+    footer div.footer__redessociales__fb {
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      background-image: url("../fonts/iconos/facebook.svg");
+      background-size: 35%; }
+    footer div.footer__redessociales__tw {
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      background-image: url("../fonts/iconos/twitter.svg"); }
+    footer div.footer__redessociales__insta {
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      background-image: url("../fonts/iconos/instagram.svg"); }
+  footer div.footer__enlaces {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    footer div.footer__enlaces li {
+      margin-top: 10px; }
+  footer span.footer__linea {
+    width: 2px;
+    height: 60px;
+    background-color: white; }
+>>>>>>> 077411488c36434dd71296d725705630ccdb6086
