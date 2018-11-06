@@ -375,7 +375,7 @@ a {
 }
 
 */
-footer div.footer__datos, footer div.footer__direccion, footer div.footer__redessociales, footer div.footer__enlaces {
+footer div.footer__redessociales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,6 +385,13 @@ footer div.footer__datos, footer div.footer__direccion, footer div.footer__redes
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+footer div.footer__redessociales__fb, footer div.footer__redessociales__tw, footer div.footer__redessociales__insta {
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 20%; }
 
 .boton {
   display: block;
@@ -440,33 +447,76 @@ header {
   height: 50px; }
 
 footer {
-  width: 100%;
   height: 380px;
   background-color: black; }
   footer div.footer__datos {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 50px; }
-    footer div.footer__datos__logo {
-      width: 50px;
-      height: 50px;
-      background-image: url("../fonts/iconos/menu.svg"); }
-  footer h4 {
-    text-align: center; }
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    footer div.footer__datos h6 {
+      margin-bottom: 20px; }
+    footer div.footer__datos h4 {
+      margin-top: 40px;
+      margin-bottom: 20px; }
   footer div.footer__redessociales {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 50px; }
     footer div.footer__redessociales__fb {
       width: 50px;
       height: 50px;
-      border: 1px solid white; }
+      border: 1px solid white;
+      background-image: url("../fonts/iconos/facebook.svg");
+      background-size: 35%; }
     footer div.footer__redessociales__tw {
       width: 50px;
       height: 50px;
-      border: 1px solid white; }
+      border: 1px solid white;
+      background-image: url("../fonts/iconos/twitter.svg"); }
     footer div.footer__redessociales__insta {
       width: 50px;
       height: 50px;
-      border: 1px solid white; }
+      border: 1px solid white;
+      background-image: url("../fonts/iconos/instagram.svg"); }
   footer div.footer__enlaces {
-    margin-bottom: 100px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; }
+    footer div.footer__enlaces li {
+      margin-top: 10px; }
+  footer span.footer__linea {
+    width: 2px;
+    height: 60px;
+    background-color: white; }

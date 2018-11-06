@@ -6,36 +6,29 @@
 
 footer {
     //GENERAL
-    width: 100%;
     height: 380px;
     background-color: black;
 
 
-
-
-
-    //LOGO, H6 Y DIRECCION
+    // DIRECCION Y DATOS
     div.footer__datos {
-        display: flex;
-        padding-top: 50px;
-        @extend %flexCentrar;
+        @include centrarCaja ($ancho:90%, $mtop:0, $mbottom:0);
+        @include flexbox($jc: space-around, $ai:left, $fd:column);
+        h6{
+            margin-bottom: 20px;
+        }
+        h4 {
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
 
-        h6 {}
     }
 
-    div.footer__direccion {
-        @extend %flexCentrar;
-       
-    }
-    h4{
-        text-align: center;
-    }
-  
-
+    
     //REDES SOCIALES
     div.footer__redessociales {
         @extend %flexCentrar;
+        @include centrarCaja ($ancho:90%, $mtop:0, $mbottom:0);
 
         padding-bottom: 50px;
 
@@ -43,28 +36,50 @@ footer {
             width: 50px;
             height: 50px;
             border: 1px solid white;
+            background-image: url('../fonts/iconos/facebook.svg');
+            background-size: 35%;
+            @extend %icon-background;
         }
 
         &__tw {
             width: 50px;
             height: 50px;
             border: 1px solid white;
+            background-image: url('../fonts/iconos/twitter.svg');
+            @extend %icon-background;
         }
 
         &__insta {
             width: 50px;
             height: 50px;
             border: 1px solid white;
+            background-image: url('../fonts/iconos/instagram.svg');
+            @extend %icon-background;
         }
 
     }
 
     //ENLACES WEB
     div.footer__enlaces {
-        @extend %flexCentrar;
-        margin-bottom: 100px;
+        @include flexbox($jc: space-between, $ai:center, $fd:row);
+        @include centrarCaja ($ancho:90%, $mtop:0, $mbottom:0);
+
+        li {
+            margin-top: 10px;
+        }
+
 
     }
 
+    a.footer__enlaces--blog{
+     
+       
+    }
 
+    span.footer__linea {
+        width: 2px;
+        height: 60px;
+        background-color: white;
+
+    }
 }
