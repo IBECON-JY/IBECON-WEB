@@ -4,10 +4,15 @@
 
 @font-face{
     font-family: 'CourierNew';
-    src: local('CourierNew'), url(../fonts/Montserrat-Regular.woff)
+    src: local('CourierNew'), url(../fonts/tipografia/CourierNew.woff)
     format(woff);
 }
 
+@font-face{
+    font-family: 'CourierNewBold';
+    src: local('CourierNewBold'), url(../fonts/tipografia/CourierNewBold.woff)
+    format(woff);
+}
 
 html{
     font-family: 'CourierNew', sans-serif;
