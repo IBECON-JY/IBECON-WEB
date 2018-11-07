@@ -361,10 +361,6 @@ html {
   font-size: 16px;
   color: #fff; }
 
-a {
-  text-decoration: none;
-  color: white; }
-
 /*
 // mixin para realizar un grid layout
 @mixin gridLayout ($gtrow:repeat(4, 1fr), 
@@ -379,11 +375,7 @@ a {
 }
 
 */
-<<<<<<< HEAD
-.cajaCentral__eslogan {
-=======
-footer div.footer__redessociales {
->>>>>>> 077411488c36434dd71296d725705630ccdb6086
+.cajaCentral__eslogan, footer div.footer__redessociales {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,7 +386,13 @@ footer div.footer__redessociales {
   -ms-flex-align: center;
   align-items: center; }
 
-<<<<<<< HEAD
+footer div.footer__redessociales__fb, footer div.footer__redessociales__tw, footer div.footer__redessociales__insta {
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 20%; }
+
 header {
   background-color: #000; }
 
@@ -447,7 +445,7 @@ header {
     position: absolute;
     /* al activar el menu, el menu se colocara en columnas, en vez de una unica fila */ }
     .cajaCentral__cont-nav__menuPrincipal {
-      width: 65%;
+      width: 250px;
       margin-top: 0;
       margin-bottom: 0;
       margin-left: auto;
@@ -517,14 +515,6 @@ header {
     flex-direction: column;
     flex-direction: column;
     align-items: center; }
-=======
-footer div.footer__redessociales__fb, footer div.footer__redessociales__tw, footer div.footer__redessociales__insta {
-  background-size: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 10px;
-  border-radius: 20%; }
->>>>>>> 077411488c36434dd71296d725705630ccdb6086
 
 .boton {
   display: block;
@@ -544,96 +534,79 @@ footer div.footer__redessociales__fb, footer div.footer__redessociales__tw, foot
     position: relative;
       */
 .slider {
-  position: relative; }
-
-.diapostiva-inner {
   position: relative;
-  overflow: hidden;
-  width: 100%; }
-
-/* esto al hacer click se abrir una imagen hermana de input que se ha clickeado  */
-.diapostiva-open:checked + .diapostiva-item {
-  position: static;
-  opacity: 100; }
-
-.diapostiva-item {
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s ease-out;
-  -o-transition: opacity 0.6s ease-out;
-  transition: opacity 0.6s ease-out; }
-
-.diapostiva-item img {
-  display: block;
-  height: auto;
-  max-width: 100%; }
-
-/* Propiedades de las flechas antes de pasar el raton */
-.diapostiva-control {
-  background: rgba(0, 0, 0, 0.28);
-  border-radius: 50%;
-  color: #fff;
-<<<<<<< HEAD
-  cursor: pointer;
-  display: none;
-  font-size: 40px;
-  height: 40px;
-  line-height: 35px;
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  width: 40px;
-  z-index: 10; }
-
-/* posicion de las flechas en los laterales del banner */
-.diapostiva-control.prev {
-  left: 2%; }
-
-.diapostiva-control.next {
-  right: 2%; }
-
-/* propiedades al hacer click sobre las flechas, se cambia el color */
-.diapostiva-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: #aaaaaa; }
-
-#diapostiva-1:checked ~ .control-1,
-#diapostiva-2:checked ~ .control-2,
-#diapostiva-3:checked ~ .control-3 {
-  display: block; }
-
-.diapostiva-indicatores {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10; }
-
-.diapostiva-indicatores li {
-  display: inline-block;
-  margin: 0 5px; }
-
-/*  color por defecto de indicadores */
-.diapostiva-circulo {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 35px; }
-
-.diapostiva-circulo:hover {
-  color: #aaaaaa; }
-
-#diapostiva-1:checked ~ .control-1 ~ .diapostiva-indicatores li:nth-child(1) .diapostiva-circulo,
-#diapostiva-2:checked ~ .control-2 ~ .diapostiva-indicatores li:nth-child(2) .diapostiva-circulo,
-#diapostiva-3:checked ~ .control-3 ~ .diapostiva-indicatores li:nth-child(3) .diapostiva-circulo {
-  color: #428bca; }
-=======
-  width: 50px;
-  height: 50px; }
+  height: 350px; }
+  .slider__contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* esto al hacer click se abrir una imagen hermana de input que se ha clickeado  */
+    /* Propiedades de las flechas antes de pasar el raton */
+    /* posicion de las flechas en los laterales del banner */
+    /* propiedades al hacer click sobre las flechas, se cambia el color */ }
+    .slider__contenedor__diapostiva-open:checked + .diapostiva-item {
+      position: static;
+      opacity: 100; }
+    .slider__contenedor__diapostiva-item {
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.6s ease-out;
+      -o-transition: opacity 0.6s ease-out;
+      transition: opacity 0.6s ease-out; }
+    .slider__contenedor__diapostiva-item source {
+      display: block;
+      height: auto;
+      max-width: 100%; }
+    .slider__contenedor__diapostiva-control {
+      background: rgba(0, 0, 0, 0.28);
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 40px;
+      height: 40px;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      width: 40px;
+      z-index: 10; }
+    .slider__contenedor__diapostiva-control.prev {
+      left: 2%; }
+    .slider__contenedor__diapostiva-control.next {
+      right: 2%; }
+    .slider__contenedor__diapostiva-control:hover {
+      background: rgba(0, 0, 0, 0.8);
+      color: #aaaaaa; }
+    .slider__contenedor__diapostiva-indicatores {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+      /*  color por defecto de indicadores */ }
+      .slider__contenedor__diapostiva-indicatores li {
+        display: inline-block;
+        margin: 0 5px; }
+      .slider__contenedor__diapostiva-indicatores__diapostiva-circulo {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-size: 35px; }
+      .slider__contenedor__diapostiva-indicatores__diapostiva-circulo:hover {
+        color: #aaaaaa; }
+  .slider #diapostiva-1:checked ~ .control-1,
+  .slider #diapostiva-2:checked ~ .control-2,
+  .slider #diapostiva-3:checked ~ .control-3 {
+    display: block; }
+  .slider #diapostiva-1:checked ~ .control-1 ~ .diapostiva-indicatores li:nth-child(1) .diapostiva-circulo,
+  .slider #diapostiva-2:checked ~ .control-2 ~ .diapostiva-indicatores li:nth-child(2) .diapostiva-circulo,
+  .slider #diapostiva-3:checked ~ .control-3 ~ .diapostiva-indicatores li:nth-child(3) .diapostiva-circulo {
+    color: #428bca; }
 
 footer {
   height: 380px;
@@ -709,4 +682,3 @@ footer {
     width: 2px;
     height: 60px;
     background-color: white; }
->>>>>>> 077411488c36434dd71296d725705630ccdb6086
