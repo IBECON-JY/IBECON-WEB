@@ -350,11 +350,7 @@ template {
 
 @font-face {
   font-family: 'CourierNew';
-  src: local("CourierNew"), url(../fonts/tipografia/CourierNew.woff) format(woff); }
-
-@font-face {
-  font-family: 'CourierNewBold';
-  src: local("CourierNewBold"), url(../fonts/tipografia/CourierNewBold.woff) format(woff); }
+  src: local("CourierNew"), url(../fonts/Montserrat-Regular.woff) format(woff); }
 
 html {
   font-family: 'CourierNew', sans-serif;
@@ -375,7 +371,11 @@ html {
 }
 
 */
+<<<<<<< HEAD
 .cajaCentral__eslogan, footer div.footer__redessociales {
+=======
+footer div.footer__redessociales {
+>>>>>>> 6f9debc2504603805006446fc22bdfa41504d352
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,6 +392,7 @@ footer div.footer__redessociales__fb, footer div.footer__redessociales__tw, foot
   background-repeat: no-repeat;
   margin: 10px;
   border-radius: 20%; }
+<<<<<<< HEAD
 
 header {
   background-color: #000; }
@@ -515,6 +516,8 @@ header {
     flex-direction: column;
     flex-direction: column;
     align-items: center; }
+=======
+>>>>>>> 6f9debc2504603805006446fc22bdfa41504d352
 
 .boton {
   display: block;
@@ -527,9 +530,23 @@ header {
   .boton .boton__icon {
     font-size: 3rem; }
 
-.video_banner_humo {
-  width: 100%; }
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #000; }
 
+<<<<<<< HEAD
 /*.contenedor_slider{
     position: relative;
       */
@@ -607,6 +624,33 @@ header {
   .slider #diapostiva-2:checked ~ .control-2 ~ .diapostiva-indicatores li:nth-child(2) .diapostiva-circulo,
   .slider #diapostiva-3:checked ~ .control-3 ~ .diapostiva-indicatores li:nth-child(3) .diapostiva-circulo {
     color: #428bca; }
+=======
+.logotipo-pagina__icon {
+  background-image: url("../fonts/iconos/menu.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: 2 px solid red; }
+
+.video_banner_humo {
+  width: 100%; }
+
+#activar {
+  display: none; }
+
+/*----------------Hamburger Menu--------------------*/
+.hamburger-menu__icono {
+  background-image: url("../fonts/iconos/menu.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 50px;
+  height: 50px; }
+>>>>>>> 6f9debc2504603805006446fc22bdfa41504d352
 
 footer {
   height: 380px;

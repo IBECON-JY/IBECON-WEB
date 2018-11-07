@@ -4,16 +4,16 @@
 
 @font-face{
     font-family: 'CourierNew';
+<<<<<<< HEAD
 
     src: local('CourierNew'), 
     url(../fonts/tipografia/CourierNew.woff) format(woff);
+=======
+    src: local('CourierNew'), url(../fonts/Montserrat-Regular.woff)
+    format(woff);
+>>>>>>> 6f9debc2504603805006446fc22bdfa41504d352
 }
 
-@font-face{
-    font-family: 'CourierNewBold';
-    src: local('CourierNewBold'), url(../fonts/tipografia/CourierNewBold.woff)
-    format(woff);
-}
 
 html{
     font-family: 'CourierNew', sans-serif;
@@ -22,3 +22,11 @@ html{
     // se coge BACKG-COLOR por variable por si cambiasemos el color blanco.
     //background-color: darken(map-get($colores, blanco), 5%);
 }
+<<<<<<< HEAD
+=======
+
+a{
+    text-decoration: none;
+    color: white;
+}
+>>>>>>> 6f9debc2504603805006446fc22bdfa41504d352
